@@ -1,4 +1,44 @@
 Set up done.
 
 ---------------------
-1.
+1. Customization done , commands  learns : 
+git checkout <branch-name> -> switch to another branch
+git checkout main -> switch to main branch 
+git checkout -b <new-branch-name> -> creates a new-brnach-name and switches to it. 
+git checkout -- app.js -> discard local chagnes in app.js
+
+git pull origin main -> connects to remote repo(origin) ,download latest changes from main, merges them into your current local branch.
+
+---------------------
+2. Add (home) route group 
+    -add home layout
+    -add navbar 
+    -add mobile navbar
+    -add footer
+
+What do are route groups: Route Groups are a feature in the App Router (app/) that let you organize routes into folders without affecting the URL path.
+app/
+ ┣ (auth)/
+ ┃   ┣ login/page.js
+ ┃   ┗ signup/page.js
+ ┣ (shop)/
+ ┃   ┣ products/page.js
+ ┃   ┗ cart/page.js
+so the actual urls be /login , /signup, /products, /cart.
+
+What is interface in typescript? 
+ans. An interface defines the shape of an object (properties + types).
+ex. interface User {
+    name: string,
+    age: number,
+    isAdmin?: boolean //? to make it optional
+}
+const user : User = {
+    name: "Sujit",
+    age: 24, 
+    isAdmin: false
+} 
+
+
+---------------------
+3.
