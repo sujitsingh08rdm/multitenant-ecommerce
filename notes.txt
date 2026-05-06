@@ -43,7 +43,40 @@ const user : User = {
 ---------------------
 3. Payload INtegration: 
 INstall payload with bUn
+Moved the home grouped route to a new app grouped route.
+Create a new Category type called Categories.
 
 ---------------------
-4. Payload INtegration: 
+4. Search Filter: 
+Enhance "Categories" Collections
+    -add subcategory, color, slug, etc.
+create SearchFilter Components
+    -display each Category
+    -display subcategory
 
+<> -> is generic in typescript -> Generics let you tell a function what type it should work with.
+In our code -> useRef<HTMLDivElement>(null); 
+useRef will store a reference of type HTMLDivElement
+
+what is getBoundingClientRect? ex.
+const rect = element.getBoundingClientRect();
+It's a JavaScript method used to get an element's size and its position relative to the viewport
+
+console.log(rect.top);    // Distance from top of viewport to top of element
+console.log(rect.left);   // Distance from left of viewport to left of element
+console.log(rect.width);  // Width of the element (including padding/border)
+console.log(rect.height); // Height of the element
+
+top/x -> distance from the top of viewport to the top of element.
+left/y -> distance from left of viewport to the left of element.
+right -> distance from left of viewport to the right of element.
+bottom -> distance from top of viewport to the bottom of element.
+width/height -> the full dimensions(including padding/border) of the element.
+
+window property :
+window.scrollY / window.scrollX -> These are read-only properties (not methods) used to get the current scroll position.
+
+window.innerWidth -> The viewport width (includes the scrollbar).
+window.outerWidth -> The entire browser window width (includes toolbars and borders).
+
+review the css styling -> in subcategory menu and useDropdown position hook.
