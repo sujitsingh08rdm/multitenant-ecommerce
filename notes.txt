@@ -79,4 +79,53 @@ window.scrollY / window.scrollX -> These are read-only properties (not methods) 
 window.innerWidth -> The viewport width (includes the scrollbar).
 window.outerWidth -> The entire browser window width (includes toolbars and borders).
 
-review the css styling -> in subcategory menu and useDropdown position hook.
+
+---------------------
+5. Categories finalization:
+
+Seed Categories
+    create a seed script
+    add new package.json command
+
+Resolve typescript issues
+    create a "custom category" type
+
+Responsiveness
+    Hide categories that do not fit
+    create mobile categories sidebar
+
+what is slug : A slug is a URL-friendly version of a string, usually used in website URLs.
+
+offsetWidth : offsetWidth is a DOM property that gives the actual visible width of an element in pixels. -> width + padding + border. 
+
+lets say 
+const box = document.getElementById("box");
+console.log(box.offsetWidth)
+
+css. 
+
+#box{
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+then box.offsetWidth = 200+20+5+5 = 230px
+
+ResizeObserver: 
+ResizeObserver is a browser API that watches an element and tells you whenever its size changes.
+
+pointer-events: none -> disables all mouse/pointer interactions on an element.
+
+see analogy : 
+Property	    Visible?	Takes space?	Clickable?
+display: none	    ❌	     ❌	            ❌
+visibility: hidden	❌	     ✅	            ❌
+pointer-events: none✅        ✅	            ❌
+
+Flex Shrink : 
+flex-shrink controls how much a flex item is allowed to shrink when there isn't enough space inside a flex container.
+flex-shrink: 1; item can shrink
+flex-shrink: 0; item keep it original width even if overflow happens
+
+
